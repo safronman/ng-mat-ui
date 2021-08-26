@@ -1,0 +1,10 @@
+<div class="app">
+    <h1>Mat slider</h1>
+    <div class="yo">
+        <img *ngIf="volume === 0" src="assets/icons/sound-0.svg" alt="">
+        <img *ngIf="(volume > 0) && (volume <= 50)" src="assets/icons/sound-50.svg" alt="">
+        <img *ngIf="(volume > 50) && (volume <= 100)" src="assets/icons/sound-100.svg" alt="">
+        <mat-slider min="0" max="100" step="1" [(ngModel)]="volume"></mat-slider>
+    </div>
+    <p>volume: {{ volume }}</p>
+</div>

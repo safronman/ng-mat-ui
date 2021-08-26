@@ -1,0 +1,32 @@
+//https://betterprogramming.pub/best-way-to-overwrite-angular-materials-styles-e38dc8b84962
+
+mat-slider {
+    &.mat-slider-horizontal {
+        width: 100%;
+
+        .mat-slider-wrapper {
+
+            .mat-slider-track-wrapper {
+                height: 4px;
+
+                .mat-slider-track-fill {
+                    background-color: blueviolet;
+                    height: 4px;
+                }
+
+                .mat-slider-track-background {
+                    background-color: aqua;
+                    height: 4px;
+                }
+            }
+
+            .mat-slider-thumb-container .mat-slider-thumb {
+                background-color: greenyellow;
+                width: 30px;
+                height: 30px;
+                bottom: -15px;
+            }
+
+        }
+    }
+}
