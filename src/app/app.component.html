@@ -8,3 +8,20 @@
     </div>
     <p>volume: {{ volume }}</p>
 </div>
+
+<div class="app app--dark">
+    <h1>Mat select</h1>
+    <mat-form-field appearance="fill">
+        <mat-label>Styles</mat-label>
+        <mat-select>
+            <mat-option>All styles</mat-option>
+            <mat-option (onSelectionChange)="selectStyleHandler($event)"
+                        *ngFor="let style of styles"
+                        [value]="style">
+                {{style.title}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <p>{{ currentStyle | json }}</p>
+</div>

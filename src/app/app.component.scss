@@ -4,6 +4,11 @@
     padding: 50px;
     background: lightgoldenrodyellow;
 
+    &--dark {
+        background: darkslategray;
+        color: #FFFFFF;
+    }
+
     .yo {
         width: 500px;
         display: flex;
